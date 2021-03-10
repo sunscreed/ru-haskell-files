@@ -23,3 +23,12 @@ beside a b = if (a == Succ b || b == Succ a) then True else False
 
 besideNum :: Nat -> Nat -> Nat -> Bool
 besideNum a b n = if (a == (b + n) || b == (a + n)) then True else False
+
+-- pow :: Nat -> Nat -> Nat
+-- pow num exp | exp == 0 = 1
+--             | exp == 1 = num
+--             | otherwise = helper num 1 exp
+-- helper num counter exp | counter == exp = num
+--                        | otherwise = num * pow num (counter + 1) exp
+ 
+
